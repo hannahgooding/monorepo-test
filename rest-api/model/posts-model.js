@@ -1,4 +1,4 @@
-const db = require("../database/connection.js");
+const db = require("../database/connection");
 
 function getAllPosts() {
   return db.query("SELECT * FROM posts;").then((res) => res.rows);
