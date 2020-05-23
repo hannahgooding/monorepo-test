@@ -1,0 +1,32 @@
+{
+  "name": "today-i-learned",
+  "version": "1.0.0",
+  "description": "root folder",
+  "main": "index.js",
+  "scripts": {
+    "api": "cd rest-api && npm start",
+    "prettier": "./node_modules/.bin/prettier . --write",
+    "apilint": "./rest-api/node_modules/.bin/eslint rest-api --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hannahgooding/today-i-learned.git"
+  },
+  "author": "Hannah Gooding",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hannahgooding/today-i-learned/issues"
+  },
+  "homepage": "https://github.com/hannahgooding/today-i-learned#readme",
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && npm run apilint"
+    }
+  }
+}
