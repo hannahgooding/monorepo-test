@@ -1,7 +1,9 @@
 language: node_js
 services:
   - postgresql
+install:
+  - npm ci
 before_script:
   - psql -c 'create database til_test_db;' -U postgres
 script:
-  - cd rest-api && npm i && npm run initdb && npm test
+  - cd rest-api && npm run initdb && npm test
