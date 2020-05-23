@@ -8,7 +8,8 @@
   "main": "server.js",
   "scripts": {
     "test": "PGDATABASE=til_test_db jest tests/*.test.js --watch",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "initdb": "node database/build.js"
   },
   "keywords": [],
   "author": "Hannah Gooding",
