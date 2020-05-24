@@ -5,11 +5,11 @@
     "node": "12.16.x"
   },
   "description": "rest-api folder",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "PGDATABASE=til_test_db jest tests/*.test.js --watch",
-    "start": "node server/index.js",
-    "dev": "nodemon server/index.js",
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js",
     "initdb": "node database/build.js"
   },
   "keywords": [],
