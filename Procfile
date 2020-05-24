@@ -1,1 +1,1 @@
-web: cd rest-api && npm start
+web: cd rest-api && npm i && npm start
