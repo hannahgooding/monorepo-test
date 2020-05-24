@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "api": "cd rest-api && npm run dev",
+    "app": "cd react-app && npm start",
     "prettier": "./node_modules/.bin/prettier . --write",
     "apilint": "./rest-api/node_modules/.bin/eslint rest-api --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
