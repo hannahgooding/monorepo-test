@@ -4,11 +4,12 @@
   "engines": {
     "node": "12.16.x"
   },
-  "description": "rest-api",
+  "description": "rest-api folder",
   "main": "server.js",
   "scripts": {
     "test": "PGDATABASE=til_test_db jest tests/*.test.js --watch",
-    "start": "nodemon server.js",
+    "start": "node server.js",
+    "dev": "nodemon server.js",
     "initdb": "node database/build.js"
   },
   "keywords": [],

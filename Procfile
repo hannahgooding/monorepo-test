@@ -1,0 +1,1 @@
+web: cd rest-api && npm start

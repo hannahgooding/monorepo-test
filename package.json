@@ -4,7 +4,7 @@
   "description": "root folder",
   "main": "index.js",
   "scripts": {
-    "api": "cd rest-api && npm start",
+    "api": "cd rest-api && npm run dev",
     "prettier": "./node_modules/.bin/prettier . --write",
     "apilint": "./rest-api/node_modules/.bin/eslint rest-api --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
