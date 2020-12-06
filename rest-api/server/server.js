@@ -3,6 +3,8 @@ const cors = require("cors");
 const PORT = process.env.PORT || 3000;
 // const users = require("./handlers/users-handlers");
 const posts = require("./handlers/posts-handlers");
+const verifyUser = require("./middleware/auth");
+const handleError = require("./middleware/error");
 
 const server = express();
 
@@ -24,4 +26,4 @@ process.on("unhandledRejection", (error) => {
   process.exit(1);
 });
 
-module.exports = server;
+server.use(handleError);

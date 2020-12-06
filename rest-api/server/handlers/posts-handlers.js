@@ -9,4 +9,9 @@ function getAllPostsHandler(req, res, next) {
     .catch(next);
 }
 
-module.exports = { getAllPostsHandler };
+function addPostHandler(req, res, next) {
+  postsModel
+    .addPost()
+}
+
+module.exports = { getAllPostsHandler, addPostHandler };

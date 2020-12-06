@@ -14,6 +14,15 @@ describe("Database tests for posts", () => {
       );
     });
   });
+
+  test("Can add new post", async () => {
+    await postsModel.addPost().then((posts) => {
+      const latestPost = posts[posts.length-1];
+      expect(latestPost.text_content).toEqual(
+        "how to build a mechanical computer"
+      );
+    });
+  });
 });
 
 afterAll(() => {
